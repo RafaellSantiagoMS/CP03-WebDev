@@ -64,7 +64,7 @@ function mostrarProdutos(produtosParaMostrar) {
  
         const imagem = document.createElement("img");
 
-        imagem.src = "./src/imagens/produto.png";
+        imagem.src = "";
 
         imagem.alt = produto.nome;
 
