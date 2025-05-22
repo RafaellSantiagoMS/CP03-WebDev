@@ -1,25 +1,14 @@
 const produtos = [
-
-    { nome: "Smartphone", preco: 1500, categoria: "Eletrônicos", disponibilidade: true },
-
-    { nome: "Notebook", preco: 3500, categoria: "Eletrônicos", disponibilidade: false },
-
-    { nome: "Camiseta", preco: 80, categoria: "Roupas", disponibilidade: true },
-
-    { nome: "Calça Jeans", preco: 120, categoria: "Roupas", disponibilidade: true },
-
-    { nome: "Livro de JavaScript", preco: 45, categoria: "Livros", disponibilidade: false },
-
-    { nome: "Livro de CSS", preco: 50, categoria: "Livros", disponibilidade: true },
-
-    { nome: "Fone de Ouvido", preco: 200, categoria: "Eletrônicos", disponibilidade: true },
-
-    { nome: "Jaqueta", preco: 220, categoria: "Roupas", disponibilidade: false },
-
-    { nome: "Tablet", preco: 1200, categoria: "Eletrônicos", disponibilidade: true },
-
-    { nome: "Livro de React", preco: 60, categoria: "Livros", disponibilidade: true },
-
+    { nome: "Smartphone", preco: 1500, categoria: "Eletrônicos", disponibilidade: true, imagem: "./src/imagens/Smartphone.png" },
+    { nome: "Notebook", preco: 3500, categoria: "Eletrônicos", disponibilidade: false, imagem: "./src/imagens/notebook.png" },
+    { nome: "Camiseta", preco: 80, categoria: "Roupas", disponibilidade: true, imagem: "./src/imagens/camiseta.png" },
+    { nome: "Calça Jeans", preco: 120, categoria: "Roupas", disponibilidade: true, imagem: "./src/imagens/calçajeans.png" },
+    { nome: "Livro de JavaScript", preco: 45, categoria: "Livros", disponibilidade: false, imagem: "./src/imagens/livro de JavaScript.png" },
+    { nome: "Livro de CSS", preco: 50, categoria: "Livros", disponibilidade: true, imagem: "./src/imagens/Livro de CSS.png" },
+    { nome: "Fone de Ouvido", preco: 200, categoria: "Eletrônicos", disponibilidade: true, imagem: "./src/imagens/Fones de Ouvido.png" },
+    { nome: "Jaqueta", preco: 220, categoria: "Roupas", disponibilidade: false, imagem: "./src/imagens/jaqueta.png" },
+    { nome: "Tablet", preco: 1200, categoria: "Eletrônicos", disponibilidade: true, imagem: "./src/imagens/tablet.png" },
+    { nome: "Livro de React", preco: 60, categoria: "Livros", disponibilidade: true, imagem: "./src/imagens/Livro de React.png" },
 ];
  
 const lista = document.querySelector(".lista-produtos");
@@ -64,7 +53,7 @@ function mostrarProdutos(produtosParaMostrar) {
  
         const imagem = document.createElement("img");
 
-        imagem.src = "";
+        imagem.src = produto.imagem; 
 
         imagem.alt = produto.nome;
 
