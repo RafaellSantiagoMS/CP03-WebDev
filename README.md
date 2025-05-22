@@ -1,8 +1,9 @@
-🛍️ Catálogo de Produtos – Website
+#🛍️ Catálogo de Produtos – Website
 Website desenvolvido como projeto acadêmico para a disciplina de FrontEnd
 (Orientado pelo Prof. Caio Oliveira)
+---
 
-📌 Sobre o Projeto
+##📌 Sobre o Projeto
 O Catálogo de Produtos é um site interativo que simula uma loja virtual, permitindo aos usuários:
 
 ✅ Visualizar produtos de diferentes categorias
@@ -10,10 +11,11 @@ O Catálogo de Produtos é um site interativo que simula uma loja virtual, permi
 🔍 Filtrar por categoria e disponibilidade
 
 🖼️ Consultar imagens, preços e status dos produtos
+---
 
 Este projeto foi desenvolvido com foco em praticar conceitos de HTML, CSS e JavaScript, além de trabalhar manipulação do DOM, filtros dinâmicos e responsividade.
 
-🚀 Objetivo do Projeto
+##🚀 Objetivo do Projeto
 📱 Criar um site responsivo e funcional
 
 🏷️ Implementar um catálogo de produtos dinâmico
@@ -23,8 +25,9 @@ Este projeto foi desenvolvido com foco em praticar conceitos de HTML, CSS e Java
 💻 Praticar habilidades de desenvolvimento com HTML, CSS e JavaScript
 
 🔗 Utilizar versionamento de código com GitHub
+---
 
-🛒 Categorias de Produtos
+##🛒 Categorias de Produtos
 
 📱 Eletrônicos
 
@@ -37,13 +40,14 @@ Camiseta, Calça Jeans, Jaqueta
 📚 Livros
 
 Livro de JavaScript, Livro de CSS, Livro de React
+---
 
-🛠️ Tecnologias Utilizadas
+##🛠️ Tecnologias Utilizadas
 FrontEnd:
 CSS:
 JAVASCRIPT
 
-🧠 Funcionalidades
+##🧠 Funcionalidades
 
 ✅ Listagem completa de produtos
 
@@ -56,8 +60,9 @@ JAVASCRIPT
 🖼️ Visualização de imagem, nome, preço e status (disponível/indisponível)
 
 ♿ Layout simples, intuitivo e responsivo
+---
 
-💼 Integrantes do Projeto
+##💼 Integrantes do Projeto
 
 Gustavo Neres:RM561785
 
