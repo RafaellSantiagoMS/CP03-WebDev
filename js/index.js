@@ -12,15 +12,11 @@ const produtos = [
 ];
  
 const lista = document.querySelector(".lista-produtos");
-
 const selectCategoria = document.getElementById("categoria");
-
 const checkboxDisponivel = document.getElementById("disponivel");
-
 const botaoFiltrar = document.getElementById("botao-filtrar");
-
 const botaoListarTodos = document.getElementById("botao-listar-todos");
- 
+
 function limparLista() {
 
     lista.innerHTML = "";
@@ -28,59 +24,41 @@ function limparLista() {
 }
  
 function mostrarProdutos(produtosParaMostrar) {
-
     limparLista();
  
     produtosParaMostrar.forEach((produto, i) => {
 
         const item = document.createElement("li");
-
         item.classList.add("cartao-produto");
- 
         const informacoes = document.createElement("div");
-
         informacoes.classList.add("informacoes");
- 
         const nomeSpan = document.createElement("span");
-
         nomeSpan.textContent = produto.nome;
- 
         const codigoSpan = document.createElement("span");
-
         codigoSpan.textContent = `#${String(i + 1).padStart(3, "0")}`;
- 
         informacoes.append(nomeSpan, codigoSpan);
- 
         const imagem = document.createElement("img");
 
         imagem.src = produto.imagem; 
-
         imagem.alt = produto.nome;
-
         imagem.classList.add("gif");
  
         const tiposLista = document.createElement("ul");
-
         tiposLista.classList.add("tipos");
  
         const tipoItem = document.createElement("li");
-
         tipoItem.classList.add("tipo", produto.categoria);
 
         tipoItem.textContent = produto.categoria;
- 
         tiposLista.appendChild(tipoItem);
  
         const descricao = document.createElement("p");
-
         descricao.classList.add("descricao");
 
         const statusDisponibilidade = produto.disponibilidade ? "Disponível" : "Indisponível";
-
         descricao.innerHTML = `Preço: R$ ${produto.preco.toFixed(2)}<br>${statusDisponibilidade}`;
  
         item.append(informacoes, imagem, tiposLista, descricao);
-
         lista.appendChild(item);
 
     });
@@ -96,15 +74,11 @@ botaoListarTodos.addEventListener("click", () => {
 botaoFiltrar.addEventListener("click", () => {
 
     const categoriaSelecionada = selectCategoria.value;
-
     const somenteDisponiveis = checkboxDisponivel.checked;
- 
     const produtosFiltrados = produtos.filter(produto => {
 
         const categoriaOK = categoriaSelecionada === "Todos" || produto.categoria === categoriaSelecionada;
-
         const disponibilidadeOK = !somenteDisponiveis || produto.disponibilidade;
-
         return categoriaOK && disponibilidadeOK;
 
     });
