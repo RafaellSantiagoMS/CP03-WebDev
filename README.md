@@ -1,5 +1,5 @@
 # 🛍️ Catálogo de Produtos – Website
-**Website desenvolvido como projeto acadêmico para a disciplina de FrontEnd
+** Website desenvolvido como projeto acadêmico para a disciplina de FrontEnd
 (Orientado pelo Prof. Caio Oliveira)
 
 ---
